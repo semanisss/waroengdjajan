@@ -1,24 +1,133 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-<title>Kontak</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | Waroeng Djajan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8e8d0;
+      color: #3e2723;
+    }
+
+    header {
+      background-color: #6d4c41;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+
+    h1, h2 {
+      color: #4e342e;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff8f0;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #bcaaa4;
+      border-radius: 5px;
+      background-color: #f5e6da;
+      color: #3e2723;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    input[type="submit"] {
+      background-color: #795548;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #5d4037;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 30px;
+      padding: 15px;
+      background-color: #d7ccc8;
+      border-radius: 5px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4e342e;
+      font-weight: 600;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #795548;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #6d4c41;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
 </head>
-<body bgcolor-EEAAC3>
-<h1><font color-AD1457 font face-Arial> Hubungi Kami </font></h1>
-<p>Alamat: 31. james street, Jakarta</p>
-<p>Telepon: 0823229191888</p>
-<p>Email: waroengdjajan@gmail.com</p>
-<h2><font color-AD1457 font face=Arial>Form Pemesanan / Kritik & Saran </font></h2>
-<form>
-Nama: <input type="text" name="nama"><br><br>
-Email: <input type="email" name="email"><br><br>
-Pesan: <textarea name-"pesan"></textarea><br><br>
-<input type="submit" value="Kirim">
-</form>
-<nav>
-<a href="index.html">Beranda</a> |
-<a href="tentang.html">Tentang Kami</a> |
-<a href="produk.html">Produk</a> |
-<a href="kontak.html">Kontak</a>
-</nav>
+<body>
+  <header>
+    <h1>Hubungi Kami</h1>
+  </header>
+
+  <div class="container">
+    <p><strong>Alamat:</strong> 31 James Street, Jakarta</p>
+    <p><strong>Telepon:</strong> 0823-2291-91888</p>
+    <p><strong>Email:</strong> waroengdjajan@gmail.com</p>
+
+    <h2>Form Pemesanan / Kritik & Saran</h2>
+    <form>
+      <label>Nama:</label>
+      <input type="text" name="nama" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Pesan:</label>
+      <textarea name="pesan" rows="5" required></textarea>
+
+      <input type="submit" value="Kirim">
+    </form>
+  </div>
+
+  <nav>
+    <a href="index.html">Beranda</a> |
+    <a href="tentang.html">Tentang Kami</a> |
+    <a href="produk.html">Produk</a> |
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <footer>
+    <p>&copy; 2025 Waroeng Djajan. Semua Hak Dilindungi.</p>
+  </footer>
 </body>
 </html>
