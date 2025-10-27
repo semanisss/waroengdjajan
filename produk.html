@@ -1,48 +1,146 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
- <title>Produk</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk | Waroeng Djajan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #f3e5ab, #e0c097);
+      color: #4e342e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      background-color: #6d4c41;
+      color: #fff8f0;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .produk-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 900px;
+      margin-top: 40px;
+      width: 100%;
+    }
+
+    .produk-card {
+      background-color: #fff8f0;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .produk-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .produk-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .produk-card h3 {
+      color: #5d4037;
+      margin-bottom: 5px;
+    }
+
+    .produk-card p {
+      color: #795548;
+      font-weight: 600;
+    }
+
+    nav {
+      margin-top: 50px;
+      background-color: #8d6e63;
+      padding: 15px 25px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff8f0;
+      font-weight: 600;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffebd0;
+    }
+
+    footer {
+      text-align: center;
+      color: #4e342e;
+      margin-top: 40px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
- <h1>Daftar Produk Waroeng Djajan</h1>
- <table border="1">
- <tr>
- <th>Gambar</th>
- <th>Nama Produk</th>
- <th>Harga</th>
- </tr>
- <tr>
- <td><img src="arem.jpg" width="100"></td>
- <td>Arem-arem</td>
- <td>Rp 5.000/pcs</td>
- </tr>
- <tr>
- <td><img src="klepon.jpg" width="100"></td>
- <td>klepon</td>
- <td>Rp 5.000/pcs</td>
- </tr>
- <tr>
- <td><img src="putu.jpg" width="100"></td>
- <td>Kue Putu</td>
- <td>Rp 15.000/box kecil</td>
- </tr>
-<tr>
- <td><img src="bulan.jpg" width="100"></td>
- <td>terang bulan mini</td>
- <td>Rp 2.000/pcs</td>
- </tr>
-<tr>
- <td><img src="pukis.jpg" width="100"></td>
- <td>kue pukis</td>
- <td>Rp 10.000/box kecil</td>
- </tr>
- </table>
- <nav>
- <a href="index.html">Beranda</a> |
- <a href="tentang.html">Tentang Kami</a> |
- <a href="produk.html">Produk</a> |
- <a href="kontak.html">Kontak</a>
- </nav>
+  <h1>Daftar Produk Waroeng Djajan</h1>
+
+  <div class="produk-container">
+    <div class="produk-card">
+      <img src="arem.jpg" alt="Arem-arem">
+      <h3>Arem-arem</h3>
+      <p>Rp 5.000 / pcs</p>
+    </div>
+
+    <div class="produk-card">
+      <img src="klepon.jpg" alt="Klepon">
+      <h3>Klepon</h3>
+      <p>Rp 5.000 / pcs</p>
+    </div>
+
+    <div class="produk-card">
+      <img src="putu.jpg" alt="Kue Putu">
+      <h3>Kue Putu</h3>
+      <p>Rp 15.000 / box kecil</p>
+    </div>
+
+    <div class="produk-card">
+      <img src="bulan.jpg" alt="Terang Bulan Mini">
+      <h3>Terang Bulan Mini</h3>
+      <p>Rp 2.000 / pcs</p>
+    </div>
+
+    <div class="produk-card">
+      <img src="pukis.jpg" alt="Kue Pukis">
+      <h3>Kue Pukis</h3>
+      <p>Rp 10.000 / box kecil</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html">Beranda</a> |
+    <a href="tentang.html">Tentang Kami</a> |
+    <a href="produk.html">Produk</a> |
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <footer>
+    &copy; 2025 Waroeng Djajan • Cita Rasa Tradisional Nusantara
+  </footer>
 </body>
 </html>
