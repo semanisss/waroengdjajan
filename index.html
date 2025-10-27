@@ -9,77 +9,98 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom right, #e0f7e9, #a8e6cf);
-      color: #2e7d32;
+      background: linear-gradient(to bottom right, #f3e5ab, #e0c097);
+      color: #4e342e;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 40px 20px;
+      min-height: 100vh;
     }
 
     h1 {
-      background-color: #66bb6a;
-      color: white;
+      background-color: #6d4c41;
+      color: #fff8f0;
       padding: 20px 30px;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
       font-size: 2em;
+      letter-spacing: 1px;
+      text-align: center;
     }
 
     p {
-      max-width: 600px;
+      max-width: 650px;
       text-align: center;
       font-size: 1.1em;
       margin-top: 20px;
+      line-height: 1.6;
+      color: #5d4037;
     }
 
     nav {
-      margin-top: 30px;
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
     }
 
     nav a {
       text-decoration: none;
-      color: white;
-      background-color: #388e3c;
-      padding: 12px 20px;
-      margin: 0 8px;
-      border-radius: 6px;
-      transition: background-color 0.3s, transform 0.2s;
+      color: #fff8f0;
+      background-color: #8d6e63;
+      padding: 12px 22px;
+      border-radius: 8px;
       font-weight: 600;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
     }
 
     nav a:hover {
-      background-color: #2e7d32;
-      transform: scale(1.05);
+      background-color: #5d4037;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #4e342e;
+      font-size: 0.9em;
+      opacity: 0.8;
     }
 
     @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px auto;
-        width: 80%;
-        text-align: center;
-      }
-
       h1 {
-        font-size: 1.5em;
+        font-size: 1.6em;
         padding: 15px 20px;
       }
 
       p {
         font-size: 1em;
       }
+
+      nav a {
+        display: block;
+        width: 80%;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
   <h1>Sugeng Rawuh Wonten "Waroeng Djajan"</h1>
-  <p>Kami menjual berbagai produk jajanan khas Nusantara yang akan membuat kamu nostalgia!</p>
+  <p>Kami menghadirkan berbagai jajanan khas Nusantara yang menggugah rasa dan membawa kenangan manis masa lalu. Rasakan kehangatan dalam setiap gigitan!</p>
+  
   <nav>
     <a href="index.html">Beranda</a>
     <a href="tentang.html">Tentang Kami</a>
     <a href="produk.html">Produk</a>
     <a href="kontak.html">Kontak</a>
   </nav>
+
+  <footer>
+    &copy; 2025 Waroeng Djajan • Rasa Tradisional, Cita Rasa Nusantara
+  </footer>
 </body>
 </html>
