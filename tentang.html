@@ -6,6 +6,7 @@
   <title>Tentang Kami | Waroeng Djajan</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    /* ===== Gaya Dasar ===== */
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -16,25 +17,56 @@
       align-items: center;
       padding: 40px 20px;
       line-height: 1.7;
+      overflow-x: hidden;
     }
 
+    /* ===== Header ===== */
     h1 {
       background-color: #6d4c41;
       color: #fff8f0;
-      padding: 20px 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      padding: 25px 35px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
       text-align: center;
       letter-spacing: 1px;
+      position: relative;
+      z-index: 2;
+      animation: fadeDown 1s ease-out;
     }
 
+    /* ===== Floating Icons ===== */
+    .icon {
+      position: absolute;
+      font-size: 2.6rem;
+      opacity: 0.12;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .icon:nth-child(1) { left: 10%; top: 20px; animation-delay: 0s; }
+    .icon:nth-child(2) { left: 35%; top: 10px; animation-delay: 1s; }
+    .icon:nth-child(3) { right: 20%; top: 25px; animation-delay: 2s; }
+    .icon:nth-child(4) { right: 5%; top: 15px; animation-delay: 3s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); opacity: 0.12; }
+      50% { transform: translateY(-20px); opacity: 0.25; }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== Konten ===== */
     .content {
       max-width: 800px;
       background: #fff8f0;
       padding: 30px;
-      margin-top: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      margin-top: 50px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+      animation: fadeIn 1.5s ease-in;
+      position: relative;
     }
 
     .content p {
@@ -43,13 +75,20 @@
       font-size: 1.05em;
     }
 
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== Navigasi ===== */
     nav {
-      margin-top: 40px;
+      margin-top: 50px;
       background-color: #8d6e63;
       padding: 15px 25px;
       border-radius: 8px;
       text-align: center;
       box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease-in 0.5s;
     }
 
     nav a {
@@ -57,32 +96,39 @@
       color: #fff8f0;
       font-weight: 600;
       margin: 0 10px;
-      transition: color 0.3s;
+      transition: color 0.3s, transform 0.3s;
     }
 
     nav a:hover {
       color: #ffebd0;
+      transform: scale(1.05);
     }
 
+    /* ===== Footer ===== */
     footer {
       text-align: center;
       margin-top: 40px;
       color: #4e342e;
       opacity: 0.8;
       font-size: 0.9em;
+      animation: fadeIn 2s ease-in;
     }
 
+    /* ===== Responsif ===== */
     @media (max-width: 600px) {
-      .content {
-        padding: 20px;
-      }
-      h1 {
-        font-size: 1.6em;
-      }
+      .content { padding: 20px; }
+      h1 { font-size: 1.6em; }
+      .icon { font-size: 2rem; }
     }
   </style>
 </head>
 <body>
+  <!-- ===== Ikon Animasi di Header ===== -->
+  <div class="icon">🍩</div>
+  <div class="icon">🍡</div>
+  <div class="icon">☕</div>
+  <div class="icon">🍰</div>
+
   <h1>Tentang Kami</h1>
 
   <div class="content">
@@ -110,4 +156,3 @@
   </footer>
 </body>
 </html>
-
